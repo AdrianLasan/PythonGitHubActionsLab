@@ -29,3 +29,12 @@ jobs:
 
     - name: Run the Python program  # Step 4: Run the Python program
       run: python main.py
+
+    - name: Save output to file  # Step 5: Save output to file
+      run: echo "Hello from GitHub Actions!" > output.txt
+
+    - name: Upload output file  # Step 6: Upload output file
+      uses: actions/upload-artifact@v2
+      with:
+        name: output-file
+        path: output.txt
