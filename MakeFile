@@ -1,0 +1,2 @@
+all:
+	gcc main.py -o main
