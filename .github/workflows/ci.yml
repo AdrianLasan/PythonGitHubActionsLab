@@ -34,7 +34,7 @@ jobs:
       run: echo "Hello from GitHub Actions!" > output.txt
 
     - name: Upload output file  # Step 6: Upload output file
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3  # Updated to v3
       with:
         name: output-file
         path: output.txt
